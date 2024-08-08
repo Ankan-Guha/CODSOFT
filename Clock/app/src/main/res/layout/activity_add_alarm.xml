@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336">
+
+    <TextView
+        android:id="@+id/saveAlarm"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/save"
+        android:layout_margin="15dp"
+        />
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/close"
+        android:layout_margin="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New alarm"
+        android:gravity="center"
+        android:textColor="#F3CECC"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveAlarm"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="#F3CECC"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:gravity="center"
+            android:textColor="#F3CECC"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="15dp"
+            />
+        <EditText
+            android:id="@+id/minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="#F3CECC"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="15dp"
+            />
+        <EditText
+            android:id="@+id/ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AM"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#F3CECC"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="15dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ringtone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:text="Ringtone"
+        android:textColor="#F3CECC"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:drawableEnd="@drawable/arrow"
+        />
+    <TextView
+        android:id="@+id/ringtonename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ringtone"
+        android:text="Ringtone"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="15dp"
+        />
+
+
+
+
+
+</RelativeLayout>
